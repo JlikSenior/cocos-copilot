@@ -1,0 +1,1 @@
+"use strict";module.exports={description:"Cocos Copilot — Cocos Creator MCP 服务（场景、资源、脚本工具）",show_log:"输出日志"};

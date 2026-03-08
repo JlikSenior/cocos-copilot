@@ -1,0 +1,1 @@
+"use strict";module.exports={description:"Cocos Copilot — MCP server for Cocos Creator (scene, asset, script tools)",show_log:"Output log"};

@@ -1,0 +1,56 @@
+{
+    "$schema": "./@types/schema/package/index.json",
+    "package_version": 2,
+    "name": "cocos-copilot",
+    "version": "1.0.0",
+    "author": "Jlik",
+    "editor": ">=3.8.8",
+    "scripts": {
+        "preinstall": "node ./scripts/preinstall.js",
+        "build": "node --max-old-space-size=8192 ./node_modules/typescript/bin/tsc",
+        "watch": "node --max-old-space-size=8192 ./node_modules/typescript/bin/tsc -w"
+    },
+    "description": "i18n:cocos-copilot.description",
+    "main": "./dist/main.js",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.17.2",
+        "ws": "^8.18.0",
+        "zod": "^3.24.1"
+    },
+    "devDependencies": {
+        "@cocos/creator-types": "^3.8.7",
+        "@types/node": "^18.17.1",
+        "@types/ws": "^8.5.14",
+        "typescript": "^5.8.2"
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "i18n:cocos-copilot",
+                "label": "i18n:cocos-copilot.show_log",
+                "message": "show-log"
+            },
+            {
+                "path": "i18n:cocos-copilot",
+                "label": "Restart MCP",
+                "message": "restart-mcp"
+            },
+            {
+                "path": "i18n:cocos-copilot",
+                "label": "Show MCP Status",
+                "message": "show-mcp-status"
+            }
+        ],
+        "messages": {
+            "show-log": {
+                "methods": ["showLog"]
+            },
+            "restart-mcp": {
+                "methods": ["restartMcp"]
+            },
+            "show-mcp-status": {
+                "methods": ["showMcpStatus"]
+            }
+        }
+    }
+}
